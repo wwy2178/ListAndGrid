@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:descendantFocusability="blocksDescendants"  >
+    <!-- 注意着个布局中上面的跟布局添加一个 android:descendantFocusability="blocksDescendants" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/listview_item_imageview"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:background="@mipmap/doctor_no_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刘德华"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5分钟前"
+            android:textSize="13sp"
+            android:gravity="right"
+            android:paddingRight="15dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_sayToCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#222"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"/>
+
+    <com.w4lle.library.NineGridlayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/iv_ngrid_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 点赞和评论图标 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/iv_prise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_praise_normal"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:id="@+id/iv_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/forum"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:padding="7dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"/>
+
+    <wwy.com.cust_view.CusListView
+        android:id="@+id/cus_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:divider="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#e1e1e1"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

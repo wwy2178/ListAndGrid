@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".listview_add_gridandlistview.ListAddListAndGrid"/>
+        <activity android:name=".listview_add_listView.ListMainActivity"/>
     </application>
 
 </manifest>
