@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,ListMainActivity.class);
                 startActivity(intent);
             }
+
         });
         // 进入listview嵌套listview和gridview
         findViewById(R.id.tv_list_grid).setOnClickListener(new View.OnClickListener() {
